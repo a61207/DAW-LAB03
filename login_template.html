@@ -3,40 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/navBar.css">
-    <link rel="stylesheet" href="css/container.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <!--Top Bar-->
-<header class="navBar">
-    <div class="navBarLogo">
-        <img alt="" src=""><b>{Logo}</b>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid ">
+        <div class="navbar-header">
+            <a class="navbar-brand">DAW</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="">Login</a></li>
+            <li><a href="">Register</a></li>
+        </ul>
     </div>
-    <ul><li><a href="">{Menu1}</a></li></ul>
-    <ul class="rightMenu">
-        <li class="floatRight"><a href="">{Menu2}</a></li>
-        <li class="floatRight"><a href="">{Menu3}</a></li>
-    </ul>
-</header>
+</nav>
 
 <!--Registration Box-->
-<div class="container">
+<div class="container" style="padding:20px;border-style: solid;border-width: thin;border-color: whitesmoke darkgrey grey white;">
+    <h2 style="margin-bottom: 30px">Login</h2>
     <form>
-        <div>Login</div>
-        <ul>
-            <li><label>Email<input type="email"></label></li>
-            <li><label>Password<input type="password"></label></li>
-        </ul>
-        <input type="submit" value="Login">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" value="a61207@ualg.com">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" class="form-control" id="pwd" value="password">
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
     </form>
 </div>
 
-<footer class="footer">
-    <div>@2020 Desenvolvimento de Aplicações Web</div>
-    <div class="floatRight">Designed by a61207</div>
+<footer class="footer" style="position:fixed;left:0;bottom:0;height:30px;width:100%;">
+    <div style="display: inline-block; float: left;padding-left: 10px;">
+        @2020 Desenvolvimento de Aplicações Web
+    </div>
+    <div style="float: right;padding-right: 10px;">
+        Designed by a61207
+    </div>
 </footer>
 
 </body>
